@@ -1,0 +1,127 @@
+.faq-section {
+  padding: 140px 20px;
+  background: radial-gradient(circle at 20% 30%, #0f172a, #020617);
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.faq-tag {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.faq-header h2 {
+  font-size: 42px;
+  color: white;
+  margin: 10px 0;
+}
+
+.faq-header p {
+  color: #94a3b8;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARDS */
+
+.faq-card {
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(20px);
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.4s;
+  position: relative;
+}
+
+.faq-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(59,130,246,0.4);
+}
+
+.faq-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  background: linear-gradient(120deg, transparent, rgba(59,130,246,0.15), transparent);
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.faq-card:hover::before {
+  opacity: 1;
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.faq-icon {
+  font-size: 22px;
+}
+
+.faq-card h3 {
+  color: white;
+  font-size: 18px;
+}
+
+.faq-card p {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+/* DESCONSTRUÇÃO MODERNA */
+
+.card-1 { transform: rotate(-1deg); }
+.card-2 { transform: rotate(1deg) translateY(20px); }
+.card-3 { transform: rotate(-0.5deg); }
+.card-4 { transform: rotate(1deg) translateY(-15px); }
+.card-5 { transform: rotate(-1deg) translateY(10px); }
+.card-6 { transform: rotate(0.5deg); }
+
+/* RESPONSIVO */
+
+@media (max-width: 1024px) {
+
+  .faq-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .faq-header h2 {
+    font-size: 32px;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-card {
+    transform: none !important;
+  }
+
+}

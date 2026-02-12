@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <canvas id="neuralCanvas"></canvas>
+
+
+    <header class="header">
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="img/logo.png" alt="Code Dev">
+        </div>
+
+        <!-- MENU -->
+        <div class="nav-container">
+            <nav class="nav">
+                <a href="#">Início</a>
+                <a href="#">Serviços</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </nav>
+        </div>
+
+        <!-- BOTÃO -->
+        <a href="#" class="cta">
+            <span>SOLICITAR ORÇAMENTO</span>
+            <div class="cta-icon">↗</div>
+        </a>
+
+        <!-- BOTÃO MOBILE -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+    </header>
+
+    <!-- MENU MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#">Solicitar orçamento</a>
+    </div>
+
+    <!--HERO SECTION-->
+    <section class="hero">
+        <div class="hero-left">
+            <span class="badge">DESENVOLVIMENTO PROFISSIONAL</span>
+
+            <h1>
+                Criamos <span>websites e sistemas</span><br>
+                que geram resultados reais
+            </h1>
+
+            <p>
+                Desenvolvemos websites, landing pages e sistemas personalizados
+                como agendamentos e delivery. Soluções modernas, rápidas e
+                feitas para impulsionar o crescimento do seu negócio.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn-primary">
+                    Solicitar orçamento
+                </a>
+
+                <a href="#" class="btn-secondary">
+                    Ver projetos
+                </a>
+            </div>
+        </div>
+
+
+        <div class="hero-right">
+            <div class="tech-card">
+                <div class="dot red"></div>
+                <div class="dot yellow"></div>
+                <div class="dot green"></div>
+
+                <div class="code-line"></div>
+                <div class="code-line short"></div>
+                <div class="code-line"></div>
+                <div class="code-line medium"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION SOBRE-->
+    <section class="about">
+        <div class="about-overlay"></div>
+
+        <div class="about-content">
+            <span class="about-badge">SOBRE A CODE DEV</span>
+
+            <h2>
+                Tecnologia que impulsiona <span>negócios reais</span>
+            </h2>
+
+            <p>
+                A Code Dev é uma empresa especializada no desenvolvimento de websites,
+                landing pages e sistemas personalizados. Nosso foco é criar soluções
+                modernas, rápidas e eficientes que ajudam empresas a crescer e se destacar
+                no digital.
+            </p>
+
+            <p>
+                Trabalhamos como parceiros estratégicos dos nossos clientes, entendendo
+                suas necessidades e transformando ideias em sistemas funcionais, com
+                design profissional e tecnologia de ponta.
+            </p>
+
+            <div class="about-stats">
+                <div class="stat">
+                    <h3>100%</h3>
+                    <span>Projetos personalizados</span>
+                </div>
+
+                <div class="stat">
+                    <h3>Alta</h3>
+                    <span>Performance</span>
+                </div>
+
+                <div class="stat">
+                    <h3>Total</h3>
+                    <span>Suporte e parceria</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION RESULTADOS-->
+    <section class="results">
+        <div class="results-wrapper">
+
+            <!-- imagem lado esquerdo -->
+            <div class="results-image">
+
+                <img src="img/6032929.jpg" alt="Resultados e crescimento">
+
+            </div>
+
+            <!-- conteúdo lado direito -->
+            <div class="results-container">
+
+                <span class="results-badge">RESULTADOS REAIS</span>
+
+                <h2>
+                    Aumente vendas em até <span>30%</span>
+                </h2>
+
+                <p class="results-description">
+                    Um website profissional não é apenas presença digital, é uma ferramenta
+                    estratégica de vendas. Com design moderno, carregamento rápido e foco
+                    em conversão, seu negócio passa a atrair mais clientes e gerar mais
+                    resultados.
+                </p>
+
+                <div class="results-list">
+
+                    <div class="result-item">
+                        <div class="result-dot"></div>
+                        <p>Mais credibilidade e confiança para sua marca</p>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-dot"></div>
+                        <p>Maior taxa de conversão de visitantes em clientes</p>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-dot"></div>
+                        <p>Disponível 24h por dia captando oportunidades</p>
+                    </div>
+
+                    <div class="result-item">
+                        <div class="result-dot"></div>
+                        <p>Estrutura pronta para escalar seu negócio</p>
+                    </div>
+
+                </div>
+
+                <a href="#" class="results-button">
+                    Solicitar meu website
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--SECTION SERVIÇOS-->
+
+    <section class="services">
+        <div class="services-container">
+
+            <div class="services-header">
+
+                <span>NOSSOS SERVIÇOS</span>
+
+                <h2>Soluções completas para<br>seu negócio crescer</h2>
+
+                <p>
+                    Criamos websites, landing pages e sistemas modernos focados em performance,
+                    conversão e crescimento do seu negócio.
+                </p>
+
+            </div>
+
+            <div class="services-grid">
+
+                <!-- Sites -->
+                <div class="service-card">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="3" y="4" width="18" height="12" rx="2" />
+                        <line x1="8" y1="20" x2="16" y2="20" />
+                        <line x1="12" y1="16" x2="12" y2="20" />
+                    </svg>
+
+                    <h3>Sites Sob Medida</h3>
+
+                    <p>
+                        Websites modernos e profissionais que transmitem confiança
+                        e geram resultados reais.
+                    </p>
+
+                </div>
+
+                <!-- Manutenção -->
+                <div class="service-card">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="3" />
+                        <path d="M19.4 15a7.97 7.97 0 0 0 .1-6" />
+                        <path d="M4.6 9a7.97 7.97 0 0 0-.1 6" />
+                    </svg>
+
+                    <h3>Personalização e Manutenção</h3>
+
+                    <p>
+                        Seu sistema sempre atualizado, seguro e funcionando perfeitamente.
+                    </p>
+
+                </div>
+
+                <!-- UI UX -->
+                <div class="service-card">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 20h9" />
+                        <path d="M12 4h9" />
+                        <path d="M4 9h16" />
+                        <path d="M4 15h16" />
+                    </svg>
+
+                    <h3>UI e UX Design</h3>
+
+                    <p>
+                        Interfaces modernas e intuitivas que aumentam a conversão.
+                    </p>
+
+                </div>
+
+                <!-- SEO -->
+                <div class="service-card">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+
+                    <h3>Estratégia SEO</h3>
+
+                    <p>
+                        Mais visibilidade no Google e mais clientes para seu negócio.
+                    </p>
+
+                </div>
+
+                <!-- Suporte -->
+                <div class="service-card">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 8a6 6 0 0 0-12 0" />
+                        <path d="M6 18v-2" />
+                        <path d="M18 18v-2" />
+                    </svg>
+
+                    <h3>Suporte Técnico</h3>
+
+                    <p>
+                        Suporte completo e rápido sempre que você precisar.
+                    </p>
+
+                </div>
+
+                <!-- Landing Pages -->
+                <div class="service-card">
+
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18" />
+                    </svg>
+
+                    <h3>Landing Pages</h3>
+
+                    <p>
+                        Páginas criadas estrategicamente para gerar mais vendas.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--INFORMAÇÃO EXTRA - PLANS-->
+    <section class="plans">
+        <div class="plans-container">
+
+            <div class="plans-header">
+
+                <span>SERVIÇOS PRINCIPAIS</span>
+
+                <h2>Soluções ideais para cada<br>fase do seu negócio</h2>
+
+            </div>
+
+            <div class="plans-grid">
+
+                <!-- Landing Page -->
+                <div class="plan-card">
+
+                    <h3>Landing Page</h3>
+
+                    <p class="plan-desc">
+                        Ideal para empresas que desejam presença digital rápida e gerar clientes.
+                    </p>
+
+                    <ul>
+
+                        <li>Criação de página profissional</li>
+                        <li>Layout 100% responsivo</li>
+                        <li>Alta performance</li>
+                        <li>Formulário de contato</li>
+                        <li>Integração com WhatsApp</li>
+                        <li>SEO inicial configurado</li>
+
+                    </ul>
+
+                    <div class="plan-time">
+                        Prazo: 3 a 5 dias úteis
+                    </div>
+
+                </div>
+
+                <!-- Site Profissional -->
+                <div class="plan-card featured">
+
+                    <div class="badge">MAIS ESCOLHIDO</div>
+
+                    <h3>Site Profissional</h3>
+
+                    <p class="plan-desc">
+                        Solução completa para empresas que desejam autoridade e presença digital forte.
+                    </p>
+
+                    <ul>
+
+                        <li>Até 5 páginas</li>
+                        <li>Design personalizado</li>
+                        <li>SEO completo</li>
+                        <li>Integração com Analytics</li>
+                        <li>Formulários avançados</li>
+                        <li>Alta velocidade e segurança</li>
+
+                    </ul>
+
+                    <div class="plan-time">
+                        Prazo: 7 a 12 dias úteis
+                    </div>
+
+                </div>
+
+                <!-- Sistema -->
+                <div class="plan-card">
+
+                    <h3>Sistema Personalizado</h3>
+
+                    <p class="plan-desc">
+                        Sistemas sob medida para automatizar e escalar seu negócio.
+                    </p>
+
+                    <ul>
+
+                        <li>Sistema de login</li>
+                        <li>Painel administrativo</li>
+                        <li>Banco de dados integrado</li>
+                        <li>Integrações com APIs</li>
+                        <li>Interface moderna</li>
+                        <li>Alta escalabilidade</li>
+
+                    </ul>
+
+                    <div class="plan-time">
+                        Prazo: 15 a 25 dias úteis
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--FAQ-->
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+
+
+</body>
+
+</html>

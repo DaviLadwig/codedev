@@ -1,0 +1,241 @@
+.services {
+
+    padding: 140px 8%;
+    background: #000;
+    color: white;
+}
+
+.services-container {
+
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+/* HEADER */
+
+.services-header {
+
+    margin-bottom: 70px;
+}
+
+.services-header span {
+
+    color: #ff004c;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.services-header h2 {
+
+    font-size: 42px;
+    margin: 15px 0;
+    line-height: 1.2;
+}
+
+.services-header p {
+
+    color: #9a9a9a;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+
+/* GRID DESKTOP */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* CARD */
+
+.service-card {
+
+    background: #0a0a0a;
+
+    padding: 40px 30px;
+
+    border-radius: 14px;
+
+    border: 1px solid rgba(255,255,255,0.05);
+
+    transition: all 0.3s ease;
+}
+
+
+/* HOVER */
+
+.service-card:hover {
+
+    transform: translateY(-10px);
+
+    border-color: rgba(255,0,76,0.4);
+
+    box-shadow: 0 10px 30px rgba(255,0,76,0.08);
+}
+
+
+/* ICON */
+
+.service-card svg {
+
+    width: 32px;
+    height: 32px;
+
+    stroke: #ff004c;
+
+    stroke-width: 1.5;
+
+    margin-bottom: 20px;
+}
+
+
+/* TEXT */
+
+.service-card h3 {
+
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+
+    color: #9a9a9a;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+
+
+/* NOTEBOOK */
+
+@media (max-width: 1200px) {
+
+.services-grid {
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+.services {
+
+    padding: 100px 6%;
+}
+
+.services-header {
+
+    text-align: center;
+}
+
+.services-header h2 {
+
+    font-size: 30px;
+}
+
+.services-header p {
+
+    margin: auto;
+}
+
+.services-grid {
+
+    grid-template-columns: 1fr;
+}
+
+.service-card {
+
+    padding: 35px 25px;
+}
+
+}
+
+
+/* CELULAR PEQUENO */
+
+@media (max-width: 480px) {
+
+.services {
+
+    padding: 80px 5%;
+}
+
+.services-header h2 {
+
+    font-size: 26px;
+}
+
+.service-card {
+
+    padding: 30px 22px;
+}
+
+.service-card svg {
+
+    width: 28px;
+    height: 28px;
+}
+
+.service-card h3 {
+
+    font-size: 18px;
+}
+
+.service-card p {
+
+    font-size: 14px;
+}
+
+}
+
+
+.plan-card {
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+.plan-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background: radial-gradient(circle, rgba(255,0,76,0.15), transparent 70%);
+
+    top: var(--y, 50%);
+    left: var(--x, 50%);
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+
+    transition: opacity 0.3s;
+
+}
+
+
+.plan-card:hover::before {
+
+    opacity: 1;
+}

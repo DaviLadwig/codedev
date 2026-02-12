@@ -1,0 +1,155 @@
+.hero{
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:140px 60px 80px 60px;
+    min-height:100vh;
+}
+
+/* LEFT */
+
+.hero-left{
+    max-width:600px;
+}
+
+.badge{
+
+    display:inline-block;
+    padding:6px 14px;
+    background:rgba(255,0,76,0.1);
+    border:1px solid rgba(255,0,76,0.3);
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:20px;
+    color:#ff004c;
+}
+
+
+.hero-left h1{
+    color: white;
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero-left h1 span{
+    color:#ff004c;
+}
+
+.hero-left p{
+
+    color:#aaa;
+    font-size:16px;
+    margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn-primary{
+
+    background:#ff004c;
+    padding:14px 28px;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+}
+
+.btn-secondary{
+
+    border:1px solid #333;
+    padding:14px 28px;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn-secondary:hover{
+
+    border-color:#ff004c;
+    color:#ff004c;
+}
+
+/* RIGHT */
+
+.hero-right{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* TECH CARD */
+
+.tech-card{
+
+    width:400px;
+    height:260px;
+    background:#0a0a0a;
+    border:1px solid #1f1f1f;
+    border-radius:14px;
+    padding:20px;
+}
+
+/* DOTS */
+
+.dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    display:inline-block;
+    margin-right:5px;
+}
+
+.red{ background:#ff004c; }
+.yellow{ background:#ffaa00; }
+.green{ background:#00ff88; }
+
+/* CODE LINES */
+
+.code-line{
+
+    height:10px;
+    background:#1f1f1f;
+    border-radius:4px;
+    margin-top:15px;
+}
+
+.short{ width:60%; }
+.medium{ width:80%; }
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+.hero{
+
+    flex-direction:column;
+    padding:120px 20px 60px 20px;
+}
+
+.hero-left h1{
+    font-size:34px;
+}
+
+.hero-right{
+    margin-top:40px;
+}
+
+.tech-card{
+    width:100%;
+}
+
+}
