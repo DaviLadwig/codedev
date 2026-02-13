@@ -1,0 +1,119 @@
+.footer {
+
+  background: #020202;
+  padding-top: 80px;
+  color: white;
+
+}
+
+.footer-container {
+
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+
+}
+
+/* Logo */
+
+.footer-logo {
+
+  width: 360px;
+  margin-bottom: 20px;
+
+}
+
+/* Texto marca */
+
+.footer-brand p {
+
+  color: #9ca3af;
+  line-height: 1.6;
+  max-width: 320px;
+
+}
+
+/* Colunas */
+
+.footer-column h4 {
+
+  margin-bottom: 20px;
+  font-size: 16px;
+
+}
+
+.footer-column a {
+
+  display: block;
+  color: #9ca3af;
+  text-decoration: none;
+  margin-bottom: 12px;
+
+  transition: 0.3s;
+
+}
+
+.footer-column a:hover {
+
+  color: #ff1a1a;
+  transform: translateX(5px);
+
+}
+
+/* Parte inferior */
+
+.footer-bottom {
+
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+
+}
+
+.footer-line {
+
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 26, 26, 0.3),
+    transparent
+  );
+
+  margin-bottom: 20px;
+
+}
+
+.footer-bottom p {
+
+  color: #6b7280;
+  font-size: 14px;
+
+}
+
+/* Responsivo */
+
+@media(max-width: 900px){
+
+  .footer-container {
+
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+@media(max-width: 600px){
+
+  .footer-container {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}

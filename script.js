@@ -95,7 +95,7 @@ const observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
             entry.target.classList.add("show");
 
@@ -130,3 +130,34 @@ document.querySelectorAll(".plan-card").forEach(card => {
     });
 
 });
+
+
+//FAQ
+document.querySelectorAll('.faq-question').forEach(button => {
+
+  button.addEventListener('click', () => {
+
+    const faqItem = button.parentElement
+    const answer = faqItem.querySelector('.faq-answer')
+
+    if (faqItem.classList.contains('active')) {
+
+      answer.style.height = answer.scrollHeight + 'px'
+
+      requestAnimationFrame(() => {
+        answer.style.height = '0px'
+      })
+
+      faqItem.classList.remove('active')
+
+    } else {
+
+      faqItem.classList.add('active')
+
+      answer.style.height = answer.scrollHeight + 'px'
+
+    }
+
+  })
+
+})
