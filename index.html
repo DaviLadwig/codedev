@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flow Devs</title>
     <link rel="stylesheet" href="style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,52 +18,70 @@
 
 
     <header class="header">
+
         <!-- LOGO -->
         <div class="logo">
             <img src="img/logo.png" alt="Code Dev">
         </div>
 
-        <!-- MENU -->
-        <div class="nav-container">
-            <nav class="nav">
-                <a href="#">Projetos</a>
-                <a href="#">Serviços</a>
-                <a href="#">Sobre</a>
-                <a href="#">Contato</a>
-            </nav>
-        </div>
 
-        <!-- BOTÃO -->
-        <a href="#" class="cta">
-            <span>SOLICITAR ORÇAMENTO</span>
-            <div class="cta-icon">↗</div>
+        <!-- MENU DESKTOP -->
+        <nav class="nav-desktop">
+
+            <a href="#">Projetos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+
+        </nav>
+
+
+        <!-- CTA DESKTOP -->
+        <a href="#" class="cta-desktop">
+            Solicitar orçamento
         </a>
 
-        <!-- BOTÃO MOBILE -->
-        <div class="menu-toggle" onclick="toggleMenu()">
-            ☰
+
+        <!-- BOTÃO HAMBURGER -->
+        <div class="menu-btn" id="menuBtn">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
         </div>
+
     </header>
+
 
     <!-- MENU MOBILE -->
     <div class="mobile-menu" id="mobileMenu">
-        <a href="#">Início</a>
-        <a href="#">Serviços</a>
-        <a href="#">Sobre</a>
-        <a href="#">Contato</a>
-        <a href="#">Solicitar orçamento</a>
+
+        <nav class="mobile-nav">
+
+            <a href="#">Início</a>
+            <a href="#">Projetos</a>
+            <a href="#">Serviços</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+
+            <a href="#" class="mobile-cta">
+                Solicitar orçamento
+            </a>
+
+        </nav>
+
     </div>
 
-    <!--HERO SECTION-->
+
     <section class="hero">
 
         <div class="hero-container">
 
-            <!-- TEXTO -->
-            <div class="hero-left">
+            <div class="hero-content">
 
                 <div class="hero-label">
-                    CODE DEV®
+                    FLOW DEVs®
                 </div>
 
                 <h1 class="hero-title">
@@ -78,6 +96,7 @@
                 </p>
 
                 <div class="hero-buttons">
+
                     <a href="#" class="btn-primary">
                         Solicitar orçamento
                     </a>
@@ -85,19 +104,7 @@
                     <a href="#" class="btn-secondary">
                         Ver projetos
                     </a>
-                </div>
 
-            </div>
-
-            <!-- MOCKUP PARA SUA IMAGEM -->
-            <div class="hero-right">
-
-                <div class="hero-image-placeholder">
-
-                    <!-- você colocará sua imagem aqui -->
-                    <!-- exemplo: -->
-                    <img src="img/user-interface-design-showcasing-different-types-selection-handles-cursors_995578-33949.jpeg"
-                        alt="">
                 </div>
 
             </div>
@@ -113,14 +120,14 @@
         <div class="about-overlay"></div>
 
         <div class="about-content">
-            <span class="about-badge">SOBRE A CODE DEV</span>
+            <span class="about-badge">SOBRE A FLOW DEVS</span>
 
             <h2>
                 Tecnologia que impulsiona <span>negócios reais</span>
             </h2>
 
             <p>
-                A Code Dev é uma empresa especializada no desenvolvimento de websites,
+                A FLOW DEVS é uma empresa especializada no desenvolvimento de websites,
                 landing pages e sistemas personalizados. Nosso foco é criar soluções
                 modernas, rápidas e eficientes que ajudam empresas a crescer e se destacar
                 no digital.
@@ -371,7 +378,7 @@
                     </ul>
 
                     <div class="plan-time">
-                        Prazo: 3 a 5 dias úteis
+                        Prazo: 2 dias úteis
                     </div>
 
                 </div>
@@ -399,7 +406,7 @@
                     </ul>
 
                     <div class="plan-time">
-                        Prazo: 7 a 12 dias úteis
+                        Prazo: 3 a 5 dias úteis
                     </div>
 
                 </div>
@@ -425,7 +432,7 @@
                     </ul>
 
                     <div class="plan-time">
-                        Prazo: 15 a 25 dias úteis
+                        Prazo: 15 dias úteis
                     </div>
 
                 </div>
@@ -442,11 +449,12 @@
 
             <div class="faq-item">
                 <button class="faq-question">
-                    Quais serviços você oferece?
+                    Quais serviços são oferecidos?
                     <span class="faq-arrow"></span>
                 </button>
                 <div class="faq-answer">
-                    Serviços de desenvolvimento web, sistemas personalizados e automações com inteligência artificial.
+                    Serviços de desenvolvimento web, sistemas personalizados e automações com inteligência
+                    artificial.
                 </div>
             </div>
 
@@ -456,18 +464,19 @@
                     <span class="faq-arrow"></span>
                 </button>
                 <div class="faq-answer">
-                    Você pode entrar em contato pelo formulário no site ou via WhatsApp para solicitar um orçamento
+                    O interessado pode entrar em contato pelo formulário no site ou via WhatsApp para solicitar um orçamento
                     gratuito.
                 </div>
             </div>
 
             <div class="faq-item">
                 <button class="faq-question">
-                    Você trabalha com manutenção de sites?
+                    A FLOW DEVS trabalha com manutenção de sites?
                     <span class="faq-arrow"></span>
                 </button>
                 <div class="faq-answer">
-                    Sim, ofereço pacotes de manutenção e suporte para garantir que seu site esteja sempre atualizado e
+                    Sim, oferecemos pacotes de manutenção e suporte para garantir que seu site esteja sempre atualizado
+                    e
                     seguro.
                 </div>
             </div>
@@ -494,11 +503,11 @@
 
             <div class="faq-item">
                 <button class="faq-question">
-                    Você atende todo o Brasil?
+                     Atende todo o Brasil?
                     <span class="faq-arrow"></span>
                 </button>
                 <div class="faq-answer">
-                    Sim, atendo clientes de todo o Brasil de forma 100% online.
+                    Sim, atendemos clientes de todo o Brasil de forma 100% online.
                 </div>
             </div>
 
@@ -690,7 +699,7 @@
             <div class="footer-line"></div>
 
             <p>
-                © 2026 Code Dev. Todos os direitos reservados.
+                © 2026 FLOW DEVS. Todos os direitos reservados.
             </p>
 
         </div>

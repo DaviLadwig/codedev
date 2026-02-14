@@ -1,8 +1,14 @@
 
-function toggleMenu() {
-    document.getElementById("mobileMenu").classList.toggle("active");
-}
+//MENU RESPONSIVO
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
+menuBtn.addEventListener("click", () => {
+
+    menuBtn.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
+
+});
 
 //PARTICULAS TECNOLOGICAS
 
@@ -135,29 +141,29 @@ document.querySelectorAll(".plan-card").forEach(card => {
 //FAQ
 document.querySelectorAll('.faq-question').forEach(button => {
 
-  button.addEventListener('click', () => {
+    button.addEventListener('click', () => {
 
-    const faqItem = button.parentElement
-    const answer = faqItem.querySelector('.faq-answer')
+        const faqItem = button.parentElement
+        const answer = faqItem.querySelector('.faq-answer')
 
-    if (faqItem.classList.contains('active')) {
+        if (faqItem.classList.contains('active')) {
 
-      answer.style.height = answer.scrollHeight + 'px'
+            answer.style.height = answer.scrollHeight + 'px'
 
-      requestAnimationFrame(() => {
-        answer.style.height = '0px'
-      })
+            requestAnimationFrame(() => {
+                answer.style.height = '0px'
+            })
 
-      faqItem.classList.remove('active')
+            faqItem.classList.remove('active')
 
-    } else {
+        } else {
 
-      faqItem.classList.add('active')
+            faqItem.classList.add('active')
 
-      answer.style.height = answer.scrollHeight + 'px'
+            answer.style.height = answer.scrollHeight + 'px'
 
-    }
+        }
 
-  })
+    })
 
 })
