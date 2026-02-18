@@ -19,78 +19,68 @@
 
     <header class="header">
 
-        <!-- LOGO -->
-        <div class="logo">
-            <img src="img/logo.png" alt="Code Dev">
-        </div>
+        <div class="header-container">
 
+            <!-- Logo -->
+            <div class="logo">
+                <img src="img/logo.png" alt="Code Company">
+            </div>
 
-        <!-- MENU DESKTOP -->
-        <nav class="nav-desktop">
+            <!-- Menu Desktop -->
+            <nav class="nav-desktop">
+                <a href="#">Início</a>
+                <a href="#">Serviços</a>
+                <a href="projetos.html">Projetos</a>
+                <a href="#contactForm">Contato</a>
+            </nav>
 
-            <a href="#">Projetos</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+            <!-- CTA Desktop -->
+            <a href="#contactForm" class="cta-btn">Começar projeto</a>
 
-        </nav>
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menuToggle">
 
+                <span></span>
+                <span></span>
+                <span></span>
 
-        <!-- CTA DESKTOP -->
-        <a href="#" class="cta-desktop">
-            Solicitar orçamento
-        </a>
-
-
-        <!-- BOTÃO HAMBURGER -->
-        <div class="menu-btn" id="menuBtn">
-
-            <span></span>
-            <span></span>
-            <span></span>
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- MENU MOBILE -->
-    <div class="mobile-menu" id="mobileMenu">
+    <!-- Menu Mobile -->
+    <nav class="nav-mobile" id="navMobile">
 
-        <nav class="mobile-nav">
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="#contactForm">Contato</a>
 
-            <a href="#">Início</a>
-            <a href="#">Projetos</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre</a>
-            <a href="#">Contato</a>
+        <a href="#contactForm" class="cta-mobile">Começar projeto</a>
 
-            <a href="#" class="mobile-cta">
-                Solicitar orçamento
-            </a>
+    </nav>
 
-        </nav>
-
-    </div>
-
-
+    <!--HERO SECTION-->
     <section class="hero">
 
         <div class="hero-container">
 
             <div class="hero-content">
 
-                <div class="hero-label">
+                <div class="hero-label animate animate-left">
                     FLOW DEVs®
                 </div>
 
-                <h1 class="hero-title">
+                <h1 class="hero-title animate animate-left">
                     Websites e sistemas<br>
                     com padrão de<br>
                     <span>alto nível.</span>
                 </h1>
 
-                <p class="hero-description">
+                <p class="hero-description animate-scale">
                     Projetamos e desenvolvemos soluções digitais sob medida
                     para empresas que buscam performance, autoridade e crescimento.
                 </p>
@@ -119,10 +109,10 @@
     <section class="about">
         <div class="about-overlay"></div>
 
-        <div class="about-content">
+        <div class="about-content reveal reveal-left">
             <span class="about-badge">SOBRE A FLOW DEVS</span>
 
-            <h2>
+            <h2 class="reveal reveal-left">
                 Tecnologia que impulsiona <span>negócios reais</span>
             </h2>
 
@@ -160,17 +150,17 @@
 
     <!--SECTION RESULTADOS-->
     <section class="results">
-        <div class="results-wrapper">
+        <div class="results-wrapper ">
 
             <!-- imagem lado esquerdo -->
-            <div class="results-image">
+            <div class="results-image reveal reveal-scale">
 
                 <img src="img/6032929.jpg" alt="Resultados e crescimento">
 
             </div>
 
             <!-- conteúdo lado direito -->
-            <div class="results-container">
+            <div class="results-container reveal reveal-scale.show">
 
                 <span class="results-badge">RESULTADOS REAIS</span>
 
@@ -220,11 +210,11 @@
     <!--SECTION SERVIÇOS-->
 
     <section class="services">
-        <div class="services-container">
+        <div class="services-container reveal reveal-right">
 
             <div class="services-header">
 
-                <span>NOSSOS SERVIÇOS</span>
+                <span class="">NOSSOS SERVIÇOS</span>
 
                 <h2>Soluções completas para<br>seu negócio crescer</h2>
 
@@ -349,9 +339,9 @@
 
             <div class="plans-header">
 
-                <span>SERVIÇOS PRINCIPAIS</span>
+                <span class="reveal reveal-left">SERVIÇOS PRINCIPAIS</span>
 
-                <h2>Soluções ideais para cada<br>fase do seu negócio</h2>
+                <h2 class="reveal reveal-scale">Soluções ideais para cada<br>fase do seu negócio</h2>
 
             </div>
 
@@ -464,7 +454,8 @@
                     <span class="faq-arrow"></span>
                 </button>
                 <div class="faq-answer">
-                    O interessado pode entrar em contato pelo formulário no site ou via WhatsApp para solicitar um orçamento
+                    O interessado pode entrar em contato pelo formulário no site ou via WhatsApp para solicitar um
+                    orçamento
                     gratuito.
                 </div>
             </div>
@@ -503,7 +494,7 @@
 
             <div class="faq-item">
                 <button class="faq-question">
-                     Atende todo o Brasil?
+                    Atende todo o Brasil?
                     <span class="faq-arrow"></span>
                 </button>
                 <div class="faq-answer">
@@ -516,47 +507,47 @@
 
     <!--PROCESSOS-->
     <section class="process">
-        <div class="process-container">
+        <div class="process-container animate animate-scale"">
 
-            <div class="process-header">
-                <span>PROCESSO</span>
-                <h2>Como a Code Dev transforma sua ideia em realidade</h2>
-                <p>Um processo estruturado para entregar qualidade, velocidade e resultado.</p>
+            <div class=" process-header reveal reveal-left">
+            <span>PROCESSO</span>
+            <h2>Como a Code Dev transforma sua ideia em realidade</h2>
+            <p>Um processo estruturado para entregar qualidade, velocidade e resultado.</p>
+        </div>
+
+        <div class="process-steps reveal reveal-scale">
+
+            <div class="process-step">
+                <div class="step-circle">1</div>
+                <h3>Análise</h3>
+                <p>Entendemos seu negócio e objetivos.</p>
             </div>
 
-            <div class="process-steps">
-
-                <div class="process-step">
-                    <div class="step-circle">1</div>
-                    <h3>Análise</h3>
-                    <p>Entendemos seu negócio e objetivos.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-circle">2</div>
-                    <h3>Planejamento</h3>
-                    <p>Criamos a melhor solução estratégica.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-circle">3</div>
-                    <h3>Design</h3>
-                    <p>Desenvolvemos um layout moderno.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-circle">4</div>
-                    <h3>Desenvolvimento</h3>
-                    <p>Construímos com tecnologia avançada.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-circle">5</div>
-                    <h3>Entrega</h3>
-                    <p>Publicamos e damos suporte completo.</p>
-                </div>
-
+            <div class="process-step">
+                <div class="step-circle">2</div>
+                <h3>Planejamento</h3>
+                <p>Criamos a melhor solução estratégica.</p>
             </div>
+
+            <div class="process-step">
+                <div class="step-circle">3</div>
+                <h3>Design</h3>
+                <p>Desenvolvemos um layout moderno.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-circle">4</div>
+                <h3>Desenvolvimento</h3>
+                <p>Construímos com tecnologia avançada.</p>
+            </div>
+
+            <div class="process-step">
+                <div class="step-circle">5</div>
+                <h3>Entrega</h3>
+                <p>Publicamos e damos suporte completo.</p>
+            </div>
+
+        </div>
 
         </div>
     </section>
@@ -569,7 +560,7 @@
 
         <div class="cta-wrapper">
 
-            <div class="cta-left">
+            <div class="cta-left reveal reveal-left">
 
                 <span class="cta-badge">
                     INICIE SEU PROJETO
@@ -602,37 +593,47 @@
 
             </div>
 
-            <form class="cta-form-premium">
+            <form action="https://formsubmit.co/ajax/daviladwigdev@gmail.com" method="POST" class="cta-form-premium"
+                id="contactForm">
 
                 <div class="input-box">
-                    <input type="text" required>
+                    <input type="text" name="name" required>
                     <label>Seu nome</label>
                     <span class="line"></span>
                 </div>
 
                 <div class="input-box">
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label>Seu email</label>
                     <span class="line"></span>
                 </div>
 
                 <div class="input-box">
-                    <input type="tel" required>
+                    <input type="tel" name="phone" required>
                     <label>Seu WhatsApp</label>
                     <span class="line"></span>
                 </div>
 
                 <div class="input-box">
-                    <textarea required></textarea>
+                    <textarea name="message" required></textarea>
                     <label>Conte sobre seu projeto</label>
                     <span class="line"></span>
                 </div>
 
-                <button type="submit" class="btn-premium">
-                    INICIAR PROJETO
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                <button type="submit" class="btn-premium" id="submitBtn">
+                    <span class="btn-text">INICIAR PROJETO</span>
+                    <span class="btn-loading"></span>
                 </button>
 
+                <div class="form-success" id="formSuccess">
+                    ✓ Mensagem enviada com sucesso.
+                </div>
+
             </form>
+
         </div>
     </section>
 

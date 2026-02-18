@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projetos • Code Company</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="projects-hero">
+
+        <span class="hero-label reveal">PORTFÓLIO</span>
+
+        <h1 class="hero-title reveal">
+            Projetos que geram
+            <span>resultado real</span>
+        </h1>
+
+        <p class="hero-subtitle reveal">
+            Cada projeto é desenvolvido com foco em performance, conversão e experiência premium.
+        </p>
+
+    </section>
+
+
+    <section class="projects-gallery">
+
+        <div class="gallery-container">
+
+            <!-- Projeto -->
+            <div class="project-card reveal">
+
+                <img src="img/projeto1.jpg">
+
+                <div class="project-overlay">
+
+                    <h3>Sistema para clínica</h3>
+
+                    <p>Automação completa de agendamentos</p>
+
+                    <span class="project-tag">Sistema Web</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Projeto -->
+            <div class="project-card reveal">
+
+                <img src="img/projeto2.jpg">
+
+                <div class="project-overlay">
+
+                    <h3>Landing Page Premium</h3>
+
+                    <p>Alta conversão e design moderno</p>
+
+                    <span class="project-tag">Landing Page</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Projeto -->
+            <div class="project-card reveal">
+
+                <img src="img/projeto3.jpg">
+
+                <div class="project-overlay">
+
+                    <h3>Sistema de Orçamentos</h3>
+
+                    <p>Gestão inteligente de clientes</p>
+
+                    <span class="project-tag">Sistema Web</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="cta-projects">
+
+        <h2 class="reveal">
+            Seu projeto pode ser o próximo.
+        </h2>
+
+        <a href="index.html#contato" class="btn-premium reveal">
+            INICIAR PROJETO
+        </a>
+
+    </section>
+
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("active");
+
+                }
+
+            });
+
+        });
+
+        document.querySelectorAll(".reveal").forEach(el => {
+
+            observer.observe(el);
+
+        });
+    </script>
+
+</body>
+
+</html>

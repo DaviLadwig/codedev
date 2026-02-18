@@ -15,11 +15,9 @@
   width: 800px;
   height: 800px;
 
-  background: radial-gradient(
-    circle,
-    rgba(255, 26, 26, 0.15) 0%,
-    transparent 70%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 26, 26, 0.15) 0%,
+      transparent 70%);
 
   top: 50%;
   left: 60%;
@@ -179,10 +177,10 @@
 
 }
 
-.input-box input:focus + label,
-.input-box textarea:focus + label,
-.input-box input:valid + label,
-.input-box textarea:valid + label {
+.input-box input:focus+label,
+.input-box textarea:focus+label,
+.input-box input:valid+label,
+.input-box textarea:valid+label {
 
   top: -14px;
   font-size: 12px;
@@ -191,11 +189,11 @@
 
 }
 
-.input-box input:focus ~ .line,
-.input-box textarea:focus ~ .line {
+.input-box input:focus~.line,
+.input-box textarea:focus~.line {
 
   background: #ff1a1a;
-  box-shadow: 0 0 10px rgba(255,26,26,0.6);
+  box-shadow: 0 0 10px rgba(255, 26, 26, 0.6);
 
 }
 
@@ -210,11 +208,9 @@
 
   border: none;
 
-  background: linear-gradient(
-    135deg,
-    #ff1a1a,
-    #990000
-  );
+  background: linear-gradient(135deg,
+      #ff1a1a,
+      #990000);
 
   color: white;
   font-weight: bold;
@@ -232,23 +228,73 @@
 
   box-shadow:
 
-    0 10px 40px rgba(255,26,26,0.4);
+    0 10px 40px rgba(255, 26, 26, 0.4);
 
 }
 
 
+/*load page*/
+/* loading spinner */
+
+.btn-loading {
+  width: 18px;
+  height: 18px;
+  border: 2px solid transparent;
+  border-top: 2px solid #fff;
+  border-radius: 50%;
+  display: none;
+  animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* estado loading */
+
+.btn-premium.loading .btn-text {
+  display: none;
+}
+
+.btn-premium.loading .btn-loading {
+  display: inline-block;
+}
+
+/* sucesso */
+
+.form-success {
+
+  opacity: 0;
+  transform: translateY(10px);
+
+  margin-top: 15px;
+
+  color: #00ff88;
+
+  font-size: 14px;
+
+  transition: 0.4s;
+}
+
+.form-success.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Responsivo */
 
-@media(max-width: 900px){
+@media(max-width: 900px) {
 
-  .cta-wrapper{
+  .cta-wrapper {
 
     grid-template-columns: 1fr;
 
   }
 
-  .cta-left h2{
+  .cta-left h2 {
 
     font-size: 30px;
 

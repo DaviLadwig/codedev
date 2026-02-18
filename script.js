@@ -1,12 +1,12 @@
 
 //MENU RESPONSIVO
-const menuBtn = document.getElementById("menuBtn");
-const mobileMenu = document.getElementById("mobileMenu");
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("navMobile");
 
-menuBtn.addEventListener("click", () => {
+toggle.addEventListener("click", () => {
 
-    menuBtn.classList.toggle("active");
-    mobileMenu.classList.toggle("active");
+    toggle.classList.toggle("active");
+    nav.classList.toggle("active");
 
 });
 
@@ -167,3 +167,82 @@ document.querySelectorAll('.faq-question').forEach(button => {
     })
 
 })
+
+//ANIMAÇÃO
+document.addEventListener("DOMContentLoaded", function () {
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if (!revealElements.length) return;
+
+    const revealObserver = new IntersectionObserver(function (entries, observer) {
+
+        entries.forEach(function (entry) {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    revealElements.forEach(function (el) {
+        revealObserver.observe(el);
+    });
+
+});
+
+
+//LOADING PAGE
+const form = document.getElementById("contactForm");
+const button = document.getElementById("submitBtn");
+const success = document.getElementById("formSuccess");
+
+form.addEventListener("submit", async function (e) {
+
+    e.preventDefault();
+
+    button.classList.add("loading");
+
+    const data = new FormData(form);
+
+    try {
+
+        const response = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+
+            button.classList.remove("loading");
+
+            success.classList.add("show");
+
+            form.reset();
+
+        } else {
+            alert("Erro ao enviar.");
+        }
+
+    } catch (error) {
+
+        button.classList.remove("loading");
+
+        alert("Erro de conexão.");
+
+    }
+
+});
+
+
+//PROJETO
