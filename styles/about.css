@@ -3,7 +3,7 @@
     position: relative;
     padding: 140px 60px;
 
-    background-image: url("../img/5223661.jpg");
+    background-image: url("../img/3416788.jpg");
     
     background-size: cover;
     background-position: center;
@@ -22,7 +22,7 @@
     width: 100%;
     height: 100%;
 
-    background: rgba(0,0,0,0.85);
+    background: rgba(13, 13, 13, 0.326);
 
 }
 
@@ -37,7 +37,7 @@
 
 .about-badge {
 
-    color: #ff004c;
+    color: #3b82f6;
     font-size: 13px;
     letter-spacing: 2px;
 }
@@ -49,7 +49,7 @@
 }
 
 .about h2 span {
-    color: #ff004c;
+    color: #3b82f6;
 }
 
 .about p {
@@ -70,7 +70,7 @@
 
 .stat h3 {
 
-    color: #ff004c;
+    color: #3b82f6;
     font-size: 28px;
 }
 

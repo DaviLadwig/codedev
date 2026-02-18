@@ -23,7 +23,7 @@
 
 .plans-header span {
 
-    color: #ff004c;
+    color: #3b82f6;
     font-size: 13px;
     letter-spacing: 2px;
 }
@@ -67,9 +67,9 @@
 
     transform: translateY(-10px);
 
-    border-color: rgba(255, 0, 76, 0.4);
+    border-color: rgba(25, 0, 255, 0.4);
 
-    box-shadow: 0 10px 40px rgba(255, 0, 76, 0.1);
+    box-shadow: 0 10px 40px rgba(115, 0, 255, 0.1);
 }
 
 
@@ -77,7 +77,7 @@
 
 .featured {
 
-    border: 1px solid #ff004c;
+    border: 1px solid #3b82f6;
 }
 
 
@@ -85,7 +85,7 @@
 
 .badge {
 
-    background: #ff004c;
+    background: #004dc8;
 
     color: white;
 
@@ -134,13 +134,13 @@
 
     margin-bottom: 12px;
 
-    color: #ccc;
+    color: #cccccc;
 
     position: relative;
 
     padding-left: 20px;
 }
-
+        
 .plan-card ul li::before {
 
     content: "";
@@ -148,7 +148,7 @@
     width: 6px;
     height: 6px;
 
-    background: #ff004c;
+    background: #3b82f6;
 
     border-radius: 50%;
 
@@ -239,11 +239,11 @@
 
     transform: translateY(-12px) scale(1.02);
 
-    border: 1px solid rgba(255,0,76,0.5);
+    border: 1px solid rgba(0, 17, 255, 0.5);
 
     box-shadow:
-        0 10px 40px rgba(0,0,0,0.6),
-        0 0 25px rgba(255,0,76,0.15);
+        0 10px 40px rgba(0, 0, 0, 0.912),
+        0 0 25px rgba(98, 0, 255, 0.15);
 }
 
 
@@ -252,6 +252,6 @@
 .featured {
 
     box-shadow:
-        0 0 0 1px rgba(255,0,76,0.4),
-        0 0 30px rgba(255,0,76,0.15);
+        0 0 0 1px rgba(34, 0, 255, 0.4),
+        0 0 30px rgba(30, 0, 255, 0.15);
 }

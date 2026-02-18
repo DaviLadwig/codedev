@@ -2,129 +2,324 @@
 <html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Projetos • Code Company</title>
+    <title>Projetos</title>
 
+    <!-- CSS GLOBAL -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: #000;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <section class="projects-hero">
-
-        <span class="hero-label reveal">PORTFÓLIO</span>
-
-        <h1 class="hero-title reveal">
-            Projetos que geram
-            <span>resultado real</span>
-        </h1>
-
-        <p class="hero-subtitle reveal">
-            Cada projeto é desenvolvido com foco em performance, conversão e experiência premium.
-        </p>
-
-    </section>
+    <canvas id="neuralCanvas"></canvas>
 
 
-    <section class="projects-gallery">
+    <!-- HEADER (mesmo do index) -->
 
-        <div class="gallery-container">
+    <header class="header">
 
-            <!-- Projeto -->
-            <div class="project-card reveal">
+        <div class="header-container">
 
-                <img src="img/projeto1.jpg">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="img/logo.png" alt="Code Company">
+            </div>
 
-                <div class="project-overlay">
+            <!-- Menu Desktop -->
+            <nav class="nav-desktop">
+            </nav>
 
-                    <h3>Sistema para clínica</h3>
+            <!-- CTA Desktop -->
+            <a href="index.html" class="cta-btn">Voltar para a página principal</a>
 
-                    <p>Automação completa de agendamentos</p>
+            <!-- Hamburger -->
+            <div class="menu-toggle" id="menuToggle">
 
-                    <span class="project-tag">Sistema Web</span>
-
-                </div>
+                <span></span>
+                <span></span>
+                <span></span>
 
             </div>
 
+        </div>
 
-            <!-- Projeto -->
-            <div class="project-card reveal">
-
-                <img src="img/projeto2.jpg">
-
-                <div class="project-overlay">
-
-                    <h3>Landing Page Premium</h3>
-
-                    <p>Alta conversão e design moderno</p>
-
-                    <span class="project-tag">Landing Page</span>
-
-                </div>
-
-            </div>
+    </header>
 
 
-            <!-- Projeto -->
-            <div class="project-card reveal">
+    <!-- Menu Mobile -->
+    <nav class="nav-mobile" id="navMobile">
 
-                <img src="img/projeto3.jpg">
+        <a href="#">Início</a>
+        <a href="#servicesme">Serviços</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="#contactForm">Contato</a>
 
-                <div class="project-overlay">
+        <a href="#contactForm" class="cta-mobile">Começar projeto</a>
 
-                    <h3>Sistema de Orçamentos</h3>
+    </nav>
+    </header>
 
-                    <p>Gestão inteligente de clientes</p>
 
-                    <span class="project-tag">Sistema Web</span>
 
-                </div>
+    <!-- CONTEÚDO -->
+
+    <section class="projects-section">
+
+        <div class="container">
+
+            <h1 class="projects-title reveal">
+                Nossos projetos são postados aqui
+            </h1>
+
+            <div class="projects-grid">
+
+
+
+                <!-- PROJETO 1 -->
+
+                <a href="https://adv-leonardolima.vercel.app/" target="_blank" class="project-card reveal">
+
+                    <div class="project-image">
+
+                        <img src="img/mockup-adv.png">
+
+                    </div>
+
+                    <div class="project-overlay">
+
+                        <div class="project-content">
+
+                            <div class="project-tags">
+
+                                <span>UI E UX</span>
+                                <span>DEV</span>
+                                <span>WEBSITE</span>
+
+                            </div>
+
+                            <div class="project-bottom">
+
+                                <h3>Leonardo Lima ADV</h3>
+
+                                <div class="project-arrow">
+                                    ↗
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- PROJETO 2 -->
+
+                <a href="https://arc-construtora.vercel.app/" target="_blank" class="project-card reveal">
+
+                    <div class="project-image">
+
+                        <img src="img/mockup-arc.png">
+
+                    </div>
+
+                    <div class="project-overlay">
+
+                        <div class="project-content">
+
+                            <div class="project-tags">
+
+                                <span>WEBSITE</span>
+                                <span>UI E UX</span>
+                                <span>DEV</span>
+
+                            </div>
+
+                            <div class="project-bottom">
+
+                                <h3>ARC Construtora</h3>
+
+                                <div class="project-arrow">
+                                    ↗
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- PROJETO 3 -->
+
+                <a href="https://draisabelmeireles.vercel.app/" class="project-card reveal">
+
+                    <div class="project-image">
+
+                        <img src="img/mockup-dnt.png">
+
+                    </div>
+
+                    <div class="project-overlay">
+
+                        <div class="project-content">
+
+                            <div class="project-tags">
+
+                                <span>LANDING PAGE</span>
+                                <span>UI E EX</span>
+                                <span>FOCO CONVERSÃO</span>
+
+                            </div>
+
+                            <div class="project-bottom">
+
+                                <h3>Dra. Isabel Meireles</h3>
+
+                                <div class="project-arrow">
+                                    ↗
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+
+                 <a href="https://www.cotasimples.online/" class="project-card reveal">
+
+                    <div class="project-image">
+
+                        <img src="img/mockup-cota.png">
+
+                    </div>
+
+                    <div class="project-overlay">
+
+                        <div class="project-content">
+
+                            <div class="project-tags">
+
+                                <span>SISTEMA</span>
+                                <span>MODERNO</span>
+                                <span>HTML,CSS,JS</span>
+
+                            </div>
+
+                            <div class="project-bottom">
+
+                                <h3>Cota Simples</h3>
+
+                                <div class="project-arrow">
+                                    ↗
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                 <a href="https://app-financeiro-peach.vercel.app/" class="project-card reveal">
+
+                    <div class="project-image">
+
+                        <img src="img/mockup-gst.png">
+
+                    </div>
+
+                    <div class="project-overlay">
+
+                        <div class="project-content">
+
+                            <div class="project-tags">
+
+                                <span>SISTEMA</span>
+                                <span>BOOTSRAP</span>
+                                <span>HTML,CSS,JS</span>
+
+                            </div>
+
+                            <div class="project-bottom">
+
+                                <h3>App controle financeiro</h3>
+
+                                <div class="project-arrow">
+                                    ↗
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </a>
+
+                 <a href="https://verdearena.vercel.app/" class="project-card reveal">
+
+                    <div class="project-image">
+
+                        <img src="img/mockup-vrd.png">
+
+                    </div>
+
+                    <div class="project-overlay">
+
+                        <div class="project-content">
+
+                            <div class="project-tags">
+
+                                <span>SISTEMA</span>
+                                <span>AGENDAMENTO</span>
+                                <span>PHP</span>
+
+                            </div>
+
+                            <div class="project-bottom">
+
+                                <h3>Verde Arena</h3>
+
+                                <div class="project-arrow">
+                                    ↗
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </a>
 
             </div>
 
         </div>
 
     </section>
+    
 
 
-    <section class="cta-projects">
-
-        <h2 class="reveal">
-            Seu projeto pode ser o próximo.
-        </h2>
-
-        <a href="index.html#contato" class="btn-premium reveal">
-            INICIAR PROJETO
-        </a>
-
-    </section>
-
-
-    <script>
-        const observer = new IntersectionObserver(entries => {
-
-            entries.forEach(entry => {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add("active");
-
-                }
-
-            });
-
-        });
-
-        document.querySelectorAll(".reveal").forEach(el => {
-
-            observer.observe(el);
-
-        });
-    </script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

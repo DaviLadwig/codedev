@@ -26,7 +26,7 @@
 
 .process-header span {
 
-  color: #ff004c;
+  color: #3b82f6;
 
   font-size: 13px;
 
@@ -79,7 +79,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255,0,76,0.5),
+    rgba(43, 0, 255, 0.5),
     transparent
   );
 }
@@ -145,12 +145,12 @@
 
 .process-step:hover .step-circle {
 
-  border: 1px solid #ff004c;
+  border: 1px solid #3b82f6;
 
   box-shadow:
 
-    0 0 15px rgba(255,0,76,0.6),
-    0 0 30px rgba(255,0,76,0.3);
+    0 0 15px rgba(38, 0, 255, 0.6),
+    0 0 30px rgba(55, 0, 255, 0.3);
 
   transform: scale(1.1);
 }

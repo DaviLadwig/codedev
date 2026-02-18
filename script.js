@@ -58,7 +58,7 @@ function draw() {
 
         ctx.beginPath();
         ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
-        ctx.fillStyle = "#ff004c";
+        ctx.fillStyle = "#3b82f6";
         ctx.fill();
 
     });
@@ -79,7 +79,7 @@ function draw() {
                 ctx.moveTo(particles[i].x, particles[i].y);
                 ctx.lineTo(particles[j].x, particles[j].y);
 
-                ctx.strokeStyle = `rgba(255, 0, 76, ${1 - distance / maxDistance})`;
+                ctx.strokeStyle = `rgba(59,130,246,0.2) ${1 - distance / maxDistance})`;
                 ctx.stroke();
 
             }
@@ -205,7 +205,7 @@ const button = document.getElementById("submitBtn");
 const success = document.getElementById("formSuccess");
 
 form.addEventListener("submit", async function (e) {
-
+        
     e.preventDefault();
 
     button.classList.add("loading");

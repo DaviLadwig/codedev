@@ -30,7 +30,7 @@
 
 .logo img {
 
-    width: 160px;
+    width: 260px;
 }
 
 /* MENU DESKTOP */
@@ -61,7 +61,7 @@
 
     padding: 10px 22px;
 
-    border: 1px solid #ff2a2a;
+    border: 1px solid #3b82f6;
 
     color: white;
     text-decoration: none;
@@ -73,7 +73,7 @@
 
 .cta-btn:hover {
 
-    background: #ff2a2a;
+    background: #3b82f6;
 }
 
 /* HAMBURGER */
@@ -150,7 +150,7 @@
 
     padding: 12px;
 
-    border: 1px solid red;
+    border: 1px solid #3b82f6;
 
     text-align: center;
 }

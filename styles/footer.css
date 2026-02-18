@@ -59,7 +59,7 @@
 
 .footer-column a:hover {
 
-  color: #ff1a1a;
+  color: #3b82f6;
   transform: translateX(5px);
 
 }
@@ -81,7 +81,7 @@
   background: linear-gradient(
     to right,
     transparent,
-    rgba(255, 26, 26, 0.3),
+    rgba(26, 68, 255, 0.3),
     transparent
   );
 
